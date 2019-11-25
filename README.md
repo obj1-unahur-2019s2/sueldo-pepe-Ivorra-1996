@@ -8,7 +8,8 @@ Implementar en Wollok los objetos necesarios para calcular el sueldo de pepe, qu
 
 **sueldo = neto + bono x presentismo + bono x resultados**.
 
-Ya hay una definición (recontra) incompleta de Pepe, no vale agregarle parámetros a `sueldo()`, con modificar los valores de las variables debería alcanzar para que se haga la cuenta correcta.
+Ya hay una definición (recontra) incompleta de Pepe, no vale agregarle parámetros a `sueldo()`,
+con modificar los valores de las variables debería alcanzar para que se haga la cuenta correcta.
 
 ### Neto
 
@@ -32,13 +33,6 @@ Hay varios **bonos por presentismo**:
 
 * _Normal_: $2000 pesos si la persona a quien se aplica no faltó nunca, $1000 si faltó sólo un día, $0 en cualquier otro caso.
 * _Ajuste_: $100 pesos si el empleado no faltón nunca, $0 en cualquier otro caso.
-* _Demagógico_: $500 pesos si el neto es menor a 18000, $300 en caso contrario. Para este bono no importa cuántas veces faltó el emplado.
+* _Demagógico_: $500 pesos si el neto es menor a 18000, $300 en caso contrario.
+Para este bono no importa cuántas veces faltó el emplado.
 * _Nulo_: nada.
-
-
-## Algunos ejemplos
-
-1. Asignarle a pepe la categoría cadete, el bono resultado de monto fijo, y el bono presentismo normal. Suponer que faltó 3 días. Debería tener $20800 de sueldo.
-1. Asignarle a pepe la categoría gerente, el bono resultado por porcentaje, y el bono de presentismo nulo. Suponer que faltó 1 día. El sueldo debe dar $16500.
-1. Asignarle a pepe la categoría cadete, el bono de resultados por porcentaje, y el bono por presentismo normal. Suponer que nunca faltó. Debería tener $24000 de sueldo.
-1. Asignarle a pepe la categoría cadete, el bono de resultados por porcentaje, y el bono por presentismo normal. Suponer que faltó 1 día. Debería tener $23000 de sueldo.
